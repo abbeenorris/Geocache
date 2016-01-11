@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         mapView.setUserTrackingMode(.Follow, animated: true)
         mapView.mapType = MKMapType.Satellite
         
-        let gardensLocation = CLLocationCoordinate2DMake(50.716098, -1.875780)
+        let gardensLocation = CLLocationCoordinate2DMake(50.719515, -1.879002)
         let dropPin = MKPointAnnotation()
         dropPin.coordinate = gardensLocation
         dropPin.title = "Geocache"

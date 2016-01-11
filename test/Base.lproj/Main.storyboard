@@ -130,11 +130,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="rq0-T2-OGE">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bestbox" translatesAutoresizingMaskIntoConstraints="NO" id="moZ-75-hZh">
-                                <rect key="frame" x="20" y="72" width="560" height="401"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bestbox" translatesAutoresizingMaskIntoConstraints="NO" id="moZ-75-hZh">
+                                <rect key="frame" x="20" y="72" width="560" height="456"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="moZ-75-hZh" secondAttribute="height" multiplier="560:401" id="Tqb-Rp-bVq"/>
                                 </constraints>
@@ -149,6 +146,18 @@
                                     <segue destination="hah-Md-vdr" kind="show" identifier="content" id="BNe-JJ-VbO"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="booky" translatesAutoresizingMaskIntoConstraints="NO" id="aCw-33-gif">
+                                <rect key="frame" x="32" y="400" width="94" height="73"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="postcard" translatesAutoresizingMaskIntoConstraints="NO" id="oPd-Lp-c5X">
+                                <rect key="frame" x="170" y="407" width="96" height="66"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="rq0-T2-OGE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="medal" translatesAutoresizingMaskIntoConstraints="NO" id="6uz-RQ-94s">
+                                <rect key="frame" x="360" y="407" width="39" height="83"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -266,6 +275,9 @@ The man said, “Without your permission, your mother sent me your photos. When 
     </scenes>
     <resources>
         <image name="bestbox" width="1944" height="1965"/>
+        <image name="booky" width="200" height="200"/>
+        <image name="medal" width="36" height="88"/>
         <image name="newbackground" width="752" height="1334"/>
+        <image name="postcard" width="148" height="104"/>
     </resources>
 </document>
