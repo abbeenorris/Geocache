@@ -149,6 +149,13 @@
                                     <segue destination="hah-Md-vdr" kind="show" identifier="content" id="BNe-JJ-VbO"/>
                                 </connections>
                             </button>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="postcard" translatesAutoresizingMaskIntoConstraints="NO" id="oPd-Lp-c5X">
+                                <rect key="frame" x="164" y="364" width="90" height="58"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="nZ2-JY-lza" appends="YES" id="3RU-5Z-f06"/>
+                                </connections>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled-4" translatesAutoresizingMaskIntoConstraints="NO" id="Ofo-q2-QId">
                                 <rect key="frame" x="289" y="364" width="41" height="89"/>
                             </imageView>
@@ -169,13 +176,6 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="SwI-iq-EnC" appends="YES" id="seg-dC-aHF"/>
-                                </connections>
-                            </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="postcard" translatesAutoresizingMaskIntoConstraints="NO" id="oPd-Lp-c5X">
-                                <rect key="frame" x="164" y="364" width="90" height="58"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="nZ2-JY-lza" appends="YES" id="3RU-5Z-f06"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -210,7 +210,7 @@
         <!--Postcard View Controller-->
         <scene sceneID="hAF-2Z-C2g">
             <objects>
-                <viewController id="0EP-yd-Q4H" customClass="PostcardViewController" sceneMemberID="viewController">
+                <viewController id="0EP-yd-Q4H" customClass="PostcardViewController" customModule="test" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tgq-GU-tYC"/>
                         <viewControllerLayoutGuide type="bottom" id="nEE-sN-b4g"/>
