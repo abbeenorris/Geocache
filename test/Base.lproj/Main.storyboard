@@ -183,18 +183,59 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="Aif-vi-Ktd">
                                 <rect key="frame" x="0.0" y="7" width="600" height="593"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ugbvyhv" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCJ-a5-Zw6">
-                                <rect key="frame" x="276" y="232" width="66" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUd-BI-OOI">
+                                <rect key="frame" x="43" y="141" width="503" height="419"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">One day, a young guy and a young girl fell in love.
+
+But the guy came from a poor family. The girl’s parents weren’t too happy.
+
+So the young man decided not only to court the girl but to court her parents as well. In time, the parents saw that he was a good man and was worthy of their daughter’s hand.
+
+But there was another problem: The man was a soldier. Soon, war broke out and he was being sent overseas for a year. The week before he left, the man knelt on his knee and asked his lady love, “Will you marry me?” She wiped a tear, said yes, and they were engaged. They agreed that when he got back in one year, they would get married.
+
+But tragedy struck. A few days after he left, the girl had a major vehicular accident. It was a head-on collision.
+
+When she woke up in the hospital, she saw her father and mother crying. Immediately, she knew there was something wrong.
+
+She later found out that she suffered brain injury. The part of her brain that controlled her face muscles was damaged. Her once lovely face was now disfigured. She cried as she saw herself in the mirror. “Yesterday, I was beautiful. Today, I’m a monster.” Her body was also covered with so many ugly wounds.
+
+Right there and then, she decided to release her fiancé from their promise. She knew he wouldn’t want her anymore. She would forget about him and never see him again.
+
+For one year, the soldier wrote many letters—but she wouldn’t answer. He phoned her many times but she wouldn’t return her calls.
+
+But after one year, the mother walked into her room and announced, “He’s back from the war.”
+
+The girl shouted, “No! Please don’t tell him about me. Don’t tell him I’m here!”
+
+The mother said, “He’s getting married,” and handed her a wedding invitation.
+
+The girl’s heart sank. She knew she still loved him—but she had to forget him now.
+
+With great sadness, she opened the wedding invitation.
+
+And then she saw her name on it!
+
+Confused, she asked, “What is this?”
+
+That was when the young man entered her room with a bouquet of flowers. He knelt beside her and asked, “Will you marry me?”
+
+The girl covered her face with her hands and said, “I’m ugly!”
+
+The man said, “Without your permission, your mother sent me your photos. When I saw your photos, I realized that nothing has changed. You’re still the person I fell in love. You’re still as beautiful as ever. Because I love you!”</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wF6-ii-BoC" firstAttribute="top" secondItem="lUd-BI-OOI" secondAttribute="bottom" constant="40" id="1hu-0j-Fcb"/>
                             <constraint firstItem="Aif-vi-Ktd" firstAttribute="leading" secondItem="yen-dP-6LG" secondAttribute="leading" id="1i4-xE-lGC"/>
+                            <constraint firstItem="lUd-BI-OOI" firstAttribute="leading" secondItem="yen-dP-6LG" secondAttribute="leadingMargin" constant="23" id="Afr-dW-4Cq"/>
                             <constraint firstItem="Aif-vi-Ktd" firstAttribute="bottom" secondItem="wF6-ii-BoC" secondAttribute="top" id="Lsy-49-L5v"/>
                             <constraint firstAttribute="trailing" secondItem="Aif-vi-Ktd" secondAttribute="trailing" id="MmS-Su-LQC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lUd-BI-OOI" secondAttribute="trailing" constant="34" id="W2f-Kc-6lO"/>
+                            <constraint firstItem="lUd-BI-OOI" firstAttribute="top" secondItem="a3H-sw-s4C" secondAttribute="bottom" constant="77" id="jmb-fe-PaA"/>
                             <constraint firstItem="Aif-vi-Ktd" firstAttribute="top" secondItem="yen-dP-6LG" secondAttribute="topMargin" constant="7" id="s8M-Gk-Pg3"/>
                         </constraints>
                     </view>
