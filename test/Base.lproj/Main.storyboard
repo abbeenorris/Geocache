@@ -167,9 +167,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="poppy" translatesAutoresizingMaskIntoConstraints="NO" id="vL9-y2-Ogs">
                                 <rect key="frame" x="176" y="433" width="66" height="102"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book" translatesAutoresizingMaskIntoConstraints="NO" id="aCw-33-gif">
-                                <rect key="frame" x="46" y="356" width="94" height="73"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book" translatesAutoresizingMaskIntoConstraints="NO" id="aCw-33-gif">
+                                <rect key="frame" x="46" y="364" width="94" height="73"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="SwI-iq-EnC" appends="YES" id="seg-dC-aHF"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -187,6 +190,11 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vlq-IJ-m81" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="SwI-iq-EnC">
+                    <connections>
+                        <segue destination="hah-Md-vdr" kind="show" identifier="Story" id="rPT-15-3Wj"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2715" y="410"/>
         </scene>
@@ -202,6 +210,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="Aif-vi-Ktd">
+                                <rect key="frame" x="0.0" y="-18" width="600" height="618"/>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUd-BI-OOI">
                                 <rect key="frame" x="43" y="141" width="503" height="419"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -253,9 +264,6 @@ The man said, “Without your permission, your mother sent me your photos. When 
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="Aif-vi-Ktd">
-                                <rect key="frame" x="0.0" y="-18" width="600" height="618"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -305,4 +313,7 @@ The man said, “Without your permission, your mother sent me your photos. When 
         <image name="postcard" width="178" height="134"/>
         <image name="tag" width="145" height="164"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="rPT-15-3Wj"/>
+    </inferredMetricsTieBreakers>
 </document>
