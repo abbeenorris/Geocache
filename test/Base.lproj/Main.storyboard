@@ -134,7 +134,7 @@
                                 <rect key="frame" x="-1" y="1" width="600" height="600"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bestbox" translatesAutoresizingMaskIntoConstraints="NO" id="moZ-75-hZh">
-                                <rect key="frame" x="20" y="72" width="560" height="456"/>
+                                <rect key="frame" x="0.0" y="64" width="560" height="456"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="moZ-75-hZh" secondAttribute="height" multiplier="560:401" id="Tqb-Rp-bVq"/>
                                 </constraints>
@@ -153,16 +153,23 @@
                                 <rect key="frame" x="164" y="364" width="90" height="58"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled-4" translatesAutoresizingMaskIntoConstraints="NO" id="Ofo-q2-QId">
-                                <rect key="frame" x="289" y="356" width="41" height="89"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book" translatesAutoresizingMaskIntoConstraints="NO" id="aCw-33-gif">
-                                <rect key="frame" x="38" y="356" width="94" height="73"/>
+                                <rect key="frame" x="289" y="364" width="41" height="89"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tag" translatesAutoresizingMaskIntoConstraints="NO" id="3zP-V9-b2W">
-                                <rect key="frame" x="53" y="465" width="79" height="70"/>
+                                <rect key="frame" x="61" y="465" width="79" height="70"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled-6" translatesAutoresizingMaskIntoConstraints="NO" id="Qp7-VZ-csv">
                                 <rect key="frame" x="131" y="142" width="261" height="230"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coins" translatesAutoresizingMaskIntoConstraints="NO" id="vM6-uS-ZfX">
+                                <rect key="frame" x="274" y="466" width="71" height="67"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="poppy" translatesAutoresizingMaskIntoConstraints="NO" id="vL9-y2-Ogs">
+                                <rect key="frame" x="176" y="433" width="66" height="102"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book" translatesAutoresizingMaskIntoConstraints="NO" id="aCw-33-gif">
+                                <rect key="frame" x="46" y="356" width="94" height="73"/>
+                                <gestureRecognizers/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -195,9 +202,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="Aif-vi-Ktd">
-                                <rect key="frame" x="0.0" y="7" width="600" height="593"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUd-BI-OOI">
                                 <rect key="frame" x="43" y="141" width="503" height="419"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -241,6 +245,17 @@ The man said, “Without your permission, your mother sent me your photos. When 
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wY6-qO-gGc">
+                                <rect key="frame" x="179" y="97" width="261" height="21"/>
+                                <string key="text">Military: A beautiful true love story
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="Aif-vi-Ktd">
+                                <rect key="frame" x="0.0" y="-18" width="600" height="618"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -284,7 +299,9 @@ The man said, “Without your permission, your mother sent me your photos. When 
         <image name="Untitled-6" width="555" height="500"/>
         <image name="bestbox" width="1944" height="1965"/>
         <image name="book" width="175" height="133"/>
+        <image name="coins" width="184" height="183"/>
         <image name="newbackground" width="752" height="1334"/>
+        <image name="poppy" width="141" height="217"/>
         <image name="postcard" width="178" height="134"/>
         <image name="tag" width="145" height="164"/>
     </resources>
