@@ -150,16 +150,19 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="postcard" translatesAutoresizingMaskIntoConstraints="NO" id="oPd-Lp-c5X">
-                                <rect key="frame" x="165" y="408" width="90" height="58"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book" translatesAutoresizingMaskIntoConstraints="NO" id="aCw-33-gif">
-                                <rect key="frame" x="38" y="400" width="94" height="73"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tag" translatesAutoresizingMaskIntoConstraints="NO" id="3zP-V9-b2W">
-                                <rect key="frame" x="149" y="491" width="79" height="70"/>
+                                <rect key="frame" x="164" y="364" width="90" height="58"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled-4" translatesAutoresizingMaskIntoConstraints="NO" id="Ofo-q2-QId">
-                                <rect key="frame" x="82" y="472" width="41" height="89"/>
+                                <rect key="frame" x="289" y="356" width="41" height="89"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book" translatesAutoresizingMaskIntoConstraints="NO" id="aCw-33-gif">
+                                <rect key="frame" x="38" y="356" width="94" height="73"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tag" translatesAutoresizingMaskIntoConstraints="NO" id="3zP-V9-b2W">
+                                <rect key="frame" x="53" y="465" width="79" height="70"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled-6" translatesAutoresizingMaskIntoConstraints="NO" id="Qp7-VZ-csv">
+                                <rect key="frame" x="131" y="142" width="261" height="230"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -278,6 +281,7 @@ The man said, “Without your permission, your mother sent me your photos. When 
     </scenes>
     <resources>
         <image name="Untitled-4" width="86" height="168"/>
+        <image name="Untitled-6" width="555" height="500"/>
         <image name="bestbox" width="1944" height="1965"/>
         <image name="book" width="175" height="133"/>
         <image name="newbackground" width="752" height="1334"/>
