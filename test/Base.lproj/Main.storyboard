@@ -118,6 +118,46 @@
             </objects>
             <point key="canvasLocation" x="1963" y="410"/>
         </scene>
+        <!--Coin View Controller-->
+        <scene sceneID="WrL-K1-4D8">
+            <objects>
+                <viewController id="stj-sI-6r9" customClass="CoinViewController" customModule="test" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bU2-vP-qri"/>
+                        <viewControllerLayoutGuide type="bottom" id="tgG-B6-CXq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yye-He-wLo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="yDY-5F-I31">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coins" translatesAutoresizingMaskIntoConstraints="NO" id="rxC-5A-fgb">
+                                <rect key="frame" x="31" y="79" width="132" height="122"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kJb-qi-8Nc">
+                                <rect key="frame" x="37" y="200" width="526" height="359"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Country: United KingdomYears: 1937-1946Value: 6 Pence = 1/2 Shilling = 1/40 Pound Sterling (1/40 LSD)Metal: Silver (.500)Weight:2.82 gDiameter: 19.3 mmThickness: 1 mmShape: RoundOrientation: Medal alignment ↑↑Demonetized: 1980References: KM# 852George V Bare HeadIssued as part of the first coinage of George VI in 0.500 fine, prior to the coinage reform in 1947 to cupro nickel.Obverse:Bare head of George VI facing left.The obverse inscription reads:GEORGIVS VI D G BR OMN REXReverse:The reverse design consists of a lion rampant on crown with the inscription:FID DEF IND IMP19 45SIXPENCE</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yDY-5F-I31" firstAttribute="top" secondItem="Yye-He-wLo" secondAttribute="top" id="5dh-J3-C8N"/>
+                            <constraint firstAttribute="trailing" secondItem="yDY-5F-I31" secondAttribute="trailing" id="F9h-1B-fW6"/>
+                            <constraint firstItem="yDY-5F-I31" firstAttribute="bottom" secondItem="tgG-B6-CXq" secondAttribute="top" id="ZVN-ek-Ld9"/>
+                            <constraint firstItem="yDY-5F-I31" firstAttribute="leading" secondItem="Yye-He-wLo" secondAttribute="leading" id="h4E-q5-e9B"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="axX-6X-SRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2715" y="-299"/>
+        </scene>
         <!--Geocache View Controller-->
         <scene sceneID="FzS-QT-6hr">
             <objects>
@@ -130,8 +170,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="rq0-T2-OGE">
-                                <rect key="frame" x="-1" y="1" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="rq0-T2-OGE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bestbox" translatesAutoresizingMaskIntoConstraints="NO" id="moZ-75-hZh">
                                 <rect key="frame" x="0.0" y="64" width="560" height="456"/>
@@ -175,12 +215,9 @@
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coins" translatesAutoresizingMaskIntoConstraints="NO" id="vM6-uS-ZfX">
                                 <rect key="frame" x="274" y="466" width="71" height="67"/>
-                            </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book" translatesAutoresizingMaskIntoConstraints="NO" id="aCw-33-gif">
-                                <rect key="frame" x="46" y="364" width="94" height="73"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="SwI-iq-EnC" appends="YES" id="seg-dC-aHF"/>
+                                    <outletCollection property="gestureRecognizers" destination="wKC-6Z-5iQ" appends="YES" id="oQh-Ax-QTT"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="poppy" translatesAutoresizingMaskIntoConstraints="NO" id="vL9-y2-Ogs">
@@ -188,6 +225,13 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="kr0-Hf-nvy" appends="YES" id="tKg-FG-kOE"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book" translatesAutoresizingMaskIntoConstraints="NO" id="aCw-33-gif">
+                                <rect key="frame" x="46" y="364" width="94" height="73"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="SwI-iq-EnC" appends="YES" id="seg-dC-aHF"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -229,6 +273,11 @@
                 <tapGestureRecognizer id="kr0-Hf-nvy">
                     <connections>
                         <segue destination="411-rg-6pY" kind="show" identifier="poppy" id="NO5-mJ-QWC"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="wKC-6Z-5iQ">
+                    <connections>
+                        <segue destination="stj-sI-6r9" kind="show" identifier="coins" id="Vgb-ge-PRQ"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -296,6 +345,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="H9g-rN-fhj">
+                                <rect key="frame" x="0.0" y="-5" width="600" height="605"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="post" translatesAutoresizingMaskIntoConstraints="NO" id="e6e-lM-nyd">
                                 <rect key="frame" x="83" y="122" width="101" height="53"/>
                             </imageView>
@@ -312,9 +364,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="H9g-rN-fhj">
-                                <rect key="frame" x="0.0" y="-5" width="600" height="605"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -347,6 +396,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="Aif-vi-Ktd">
+                                <rect key="frame" x="0.0" y="-18" width="600" height="618"/>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUd-BI-OOI">
                                 <rect key="frame" x="43" y="141" width="503" height="419"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -398,9 +450,6 @@ The man said, “Without your permission, your mother sent me your photos. When 
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="Aif-vi-Ktd">
-                                <rect key="frame" x="0.0" y="-18" width="600" height="618"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
