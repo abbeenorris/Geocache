@@ -156,30 +156,38 @@
                                     <outletCollection property="gestureRecognizers" destination="nZ2-JY-lza" appends="YES" id="3RU-5Z-f06"/>
                                 </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled-4" translatesAutoresizingMaskIntoConstraints="NO" id="Ofo-q2-QId">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Medal" translatesAutoresizingMaskIntoConstraints="NO" id="Ofo-q2-QId">
                                 <rect key="frame" x="289" y="364" width="41" height="89"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="bW8-UB-rNG" appends="YES" id="Kgu-nH-APR"/>
                                 </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tag" translatesAutoresizingMaskIntoConstraints="NO" id="3zP-V9-b2W">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tag" translatesAutoresizingMaskIntoConstraints="NO" id="3zP-V9-b2W">
                                 <rect key="frame" x="61" y="465" width="79" height="70"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3Ih-7U-ZAx" appends="YES" id="bk4-Na-Ubj"/>
+                                </connections>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled-6" translatesAutoresizingMaskIntoConstraints="NO" id="Qp7-VZ-csv">
                                 <rect key="frame" x="131" y="142" width="261" height="230"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coins" translatesAutoresizingMaskIntoConstraints="NO" id="vM6-uS-ZfX">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coins" translatesAutoresizingMaskIntoConstraints="NO" id="vM6-uS-ZfX">
                                 <rect key="frame" x="274" y="466" width="71" height="67"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="poppy" translatesAutoresizingMaskIntoConstraints="NO" id="vL9-y2-Ogs">
-                                <rect key="frame" x="176" y="433" width="66" height="102"/>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book" translatesAutoresizingMaskIntoConstraints="NO" id="aCw-33-gif">
                                 <rect key="frame" x="46" y="364" width="94" height="73"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="SwI-iq-EnC" appends="YES" id="seg-dC-aHF"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="poppy" translatesAutoresizingMaskIntoConstraints="NO" id="vL9-y2-Ogs">
+                                <rect key="frame" x="176" y="433" width="66" height="102"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="kr0-Hf-nvy" appends="YES" id="tKg-FG-kOE"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -208,14 +216,28 @@
                         <segue destination="0EP-yd-Q4H" kind="show" identifier="Postcard" id="Oiv-nN-wVc"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="bW8-UB-rNG"/>
+                <tapGestureRecognizer id="bW8-UB-rNG">
+                    <connections>
+                        <segue destination="7Dp-YR-pAb" kind="show" identifier="Medal" id="faM-cw-eU1"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="3Ih-7U-ZAx">
+                    <connections>
+                        <segue destination="b7A-ee-6ds" kind="show" identifier="Tag" id="bHg-BU-gl4"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="kr0-Hf-nvy">
+                    <connections>
+                        <segue destination="411-rg-6pY" kind="show" identifier="poppy" id="NO5-mJ-QWC"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2715" y="410"/>
         </scene>
         <!--Medal View Controller-->
         <scene sceneID="Tdj-zG-vwV">
             <objects>
-                <viewController id="7Dp-YR-pAb" customClass="MedalViewController" sceneMemberID="viewController">
+                <viewController id="7Dp-YR-pAb" customClass="MedalViewController" customModule="test" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eYY-MF-yby"/>
                         <viewControllerLayoutGuide type="bottom" id="2kg-Jw-09b"/>
@@ -224,6 +246,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="L7k-Wn-8Fe">
+                                <rect key="frame" x="0.0" y="-5" width="600" height="605"/>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uxy-HI-ogN">
                                 <rect key="frame" x="43" y="210" width="515" height="355"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -234,11 +259,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled-4" translatesAutoresizingMaskIntoConstraints="NO" id="bi1-ee-2ge">
-                                <rect key="frame" x="265" y="80" width="84" height="129"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="L7k-Wn-8Fe">
-                                <rect key="frame" x="0.0" y="-5" width="600" height="605"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Medal" translatesAutoresizingMaskIntoConstraints="NO" id="bi1-ee-2ge">
+                                <rect key="frame" x="43" y="73" width="84" height="129"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -260,7 +282,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zqd-UZ-RVS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2840" y="-290"/>
+            <point key="canvasLocation" x="3472" y="-981"/>
         </scene>
         <!--Postcard View Controller-->
         <scene sceneID="hAF-2Z-C2g">
@@ -316,7 +338,7 @@
         <!--Story View Controller-->
         <scene sceneID="c5T-QO-OQq">
             <objects>
-                <viewController id="hah-Md-vdr" customClass="StoryViewController" sceneMemberID="viewController">
+                <viewController id="hah-Md-vdr" customClass="StoryViewController" customModule="test" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a3H-sw-s4C"/>
                         <viewControllerLayoutGuide type="bottom" id="wF6-ii-BoC"/>
@@ -325,17 +347,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="Aif-vi-Ktd">
-                                <rect key="frame" x="0.0" y="-18" width="600" height="618"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wY6-qO-gGc">
-                                <rect key="frame" x="20" y="97" width="565" height="21"/>
-                                <string key="text">Military: A beautiful true love story
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUd-BI-OOI">
                                 <rect key="frame" x="43" y="141" width="503" height="419"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -379,6 +390,17 @@ The man said, “Without your permission, your mother sent me your photos. When 
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wY6-qO-gGc">
+                                <rect key="frame" x="20" y="97" width="565" height="21"/>
+                                <string key="text">Military: A beautiful true love story
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="Aif-vi-Ktd">
+                                <rect key="frame" x="0.0" y="-18" width="600" height="618"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -402,7 +424,7 @@ The man said, “Without your permission, your mother sent me your photos. When 
         <!--Dogtag View Controller-->
         <scene sceneID="Hqh-yF-5lQ">
             <objects>
-                <viewController id="b7A-ee-6ds" customClass="DogtagViewController" sceneMemberID="viewController">
+                <viewController id="b7A-ee-6ds" customClass="DogtagViewController" customModule="test" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="s0T-O9-w2r"/>
                         <viewControllerLayoutGuide type="bottom" id="3F4-JP-SvX"/>
@@ -424,20 +446,16 @@ The man said, “Without your permission, your mother sent me your photos. When 
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tag" translatesAutoresizingMaskIntoConstraints="NO" id="1nF-cd-BsL">
-                                <rect key="frame" x="200" y="55" width="262" height="177"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tag" translatesAutoresizingMaskIntoConstraints="NO" id="1nF-cd-BsL">
+                                <rect key="frame" x="42" y="80" width="120" height="144"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xKk-12-a32" firstAttribute="leading" secondItem="Ubw-BZ-zwV" secondAttribute="leadingMargin" constant="22" id="1iv-cW-xWa"/>
                             <constraint firstItem="FFE-Tx-MKu" firstAttribute="top" secondItem="Ubw-BZ-zwV" secondAttribute="top" id="2rX-Uf-clu"/>
-                            <constraint firstItem="xKk-12-a32" firstAttribute="top" secondItem="1nF-cd-BsL" secondAttribute="bottom" id="4Ny-mV-cWj"/>
                             <constraint firstAttribute="trailing" secondItem="FFE-Tx-MKu" secondAttribute="trailing" id="60E-P3-WKB"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1nF-cd-BsL" secondAttribute="trailing" constant="118" id="9SN-tL-FDV"/>
-                            <constraint firstItem="1nF-cd-BsL" firstAttribute="leading" secondItem="Ubw-BZ-zwV" secondAttribute="leadingMargin" constant="180" id="ADt-t3-vzM"/>
                             <constraint firstItem="FFE-Tx-MKu" firstAttribute="leading" secondItem="Ubw-BZ-zwV" secondAttribute="leading" id="HSw-ML-dN8"/>
-                            <constraint firstItem="1nF-cd-BsL" firstAttribute="top" secondItem="Ubw-BZ-zwV" secondAttribute="topMargin" constant="55" id="Hz4-rn-yk4"/>
                             <constraint firstItem="FFE-Tx-MKu" firstAttribute="bottom" secondItem="3F4-JP-SvX" secondAttribute="top" id="UeA-a3-GuU"/>
                             <constraint firstItem="3F4-JP-SvX" firstAttribute="top" secondItem="xKk-12-a32" secondAttribute="bottom" constant="39" id="YTg-SX-GKn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xKk-12-a32" secondAttribute="trailing" constant="17" id="rTy-WM-f9G"/>
@@ -447,7 +465,47 @@ The man said, “Without your permission, your mother sent me your photos. When 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yd5-IC-umL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3476" y="1093"/>
+            <point key="canvasLocation" x="3482" y="1179"/>
+        </scene>
+        <!--Poppy View Controller-->
+        <scene sceneID="zmc-xc-wLe">
+            <objects>
+                <viewController id="411-rg-6pY" customClass="PoppyViewController" customModule="test" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m1e-K2-jV5"/>
+                        <viewControllerLayoutGuide type="bottom" id="H4u-9C-2on"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wbU-xw-fEY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="e9A-ig-0Q3">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wJp-So-Lai">
+                                <rect key="frame" x="41" y="209" width="518" height="356"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Remembrance is part of modern British life, culture and heritage. It becomes a particular feature of the public calendar each year when public, private, formal and informal Remembrance events take place throughout the UK. Remembrance day is on the Sunday, November 13In the spring of 1915, shortly after losing a friend in Ypres, a Canadian doctor, Lt Col John McCrae was inspired by the sight of poppies growing in battle scared fields, to write a now famous poem called 'In Flanders Fields'. After the First World War, the poppy was adopted as a symbol of Remembrance.IN FLANDERS FIELDS:In Flanders' fields the poppies blowBetween the crosses, row on row,That mark our place: and in the skyThe larks, still bravely singing, flyScarce heard amid the guns below.We are the dead. Short days agoWe lived, felt dawn, saw sunset glow,Loved and were loved, and now we lieIn Flanders' fields.Take up our quarrel with the foe;To you from failing hands we throwThe torch; be yours to hold it high,If ye break faith with us who dieWe shall not sleep, though poppies grow  In Flanders' Fields.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="poppy" translatesAutoresizingMaskIntoConstraints="NO" id="cpq-UY-ofp">
+                                <rect key="frame" x="48" y="72" width="98" height="129"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e9A-ig-0Q3" firstAttribute="top" secondItem="wbU-xw-fEY" secondAttribute="top" id="RtW-tg-Qg0"/>
+                            <constraint firstItem="e9A-ig-0Q3" firstAttribute="bottom" secondItem="H4u-9C-2on" secondAttribute="top" id="XWC-PU-2Rl"/>
+                            <constraint firstAttribute="trailing" secondItem="e9A-ig-0Q3" secondAttribute="trailing" id="edx-mQ-2A1"/>
+                            <constraint firstItem="e9A-ig-0Q3" firstAttribute="leading" secondItem="wbU-xw-fEY" secondAttribute="leading" id="odL-V5-Qk8"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gM2-zo-9OQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2690" y="1179"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BeG-CJ-KRk">
@@ -470,7 +528,7 @@ The man said, “Without your permission, your mother sent me your photos. When 
         </scene>
     </scenes>
     <resources>
-        <image name="Untitled-4" width="86" height="168"/>
+        <image name="Medal" width="86" height="168"/>
         <image name="Untitled-6" width="555" height="500"/>
         <image name="bestbox" width="1944" height="1965"/>
         <image name="book" width="175" height="133"/>

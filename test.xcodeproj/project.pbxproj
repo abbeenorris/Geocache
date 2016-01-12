@@ -15,6 +15,9 @@
 		7A5F373559010412BFB3A5DD /* Pods_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4B8F6987C8F8BE4406ECAC /* Pods_test.framework */; };
 		D138E2B01C42F26E0096648E /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D138E2AF1C42F26E0096648E /* StoryViewController.swift */; };
 		D138E2B21C443D2B0096648E /* PostcardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D138E2B11C443D2B0096648E /* PostcardViewController.swift */; };
+		D138E2B41C4506B00096648E /* MedalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D138E2B31C4506B00096648E /* MedalViewController.swift */; };
+		D138E2B61C450A7E0096648E /* DogtagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D138E2B51C450A7E0096648E /* DogtagViewController.swift */; };
+		D138E2B81C450D0B0096648E /* PoppyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D138E2B71C450D0B0096648E /* PoppyViewController.swift */; };
 		F22BDFD31C0C548E0061AA78 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22BDFD21C0C548E0061AA78 /* IntroViewController.swift */; };
 		F2CB69291C1597E9003AD345 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CB69281C1597E9003AD345 /* MapKit.framework */; };
 		F2CB692B1C15A200003AD345 /* GeocacheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CB692A1C15A200003AD345 /* GeocacheViewController.swift */; };
@@ -33,6 +36,9 @@
 		4B4B8F6987C8F8BE4406ECAC /* Pods_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D138E2AF1C42F26E0096648E /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		D138E2B11C443D2B0096648E /* PostcardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostcardViewController.swift; sourceTree = "<group>"; };
+		D138E2B31C4506B00096648E /* MedalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalViewController.swift; sourceTree = "<group>"; };
+		D138E2B51C450A7E0096648E /* DogtagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogtagViewController.swift; sourceTree = "<group>"; };
+		D138E2B71C450D0B0096648E /* PoppyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoppyViewController.swift; sourceTree = "<group>"; };
 		DE9410764552A0F522F31D40 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		F22BDFD21C0C548E0061AA78 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		F2CB69281C1597E9003AD345 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -75,10 +81,13 @@
 			children = (
 				272B9A291C04B6B400915B12 /* AppDelegate.swift */,
 				F22BDFD21C0C548E0061AA78 /* IntroViewController.swift */,
+				272B9A2B1C04B6B400915B12 /* ViewController.swift */,
 				F2CB692A1C15A200003AD345 /* GeocacheViewController.swift */,
 				D138E2AF1C42F26E0096648E /* StoryViewController.swift */,
 				D138E2B11C443D2B0096648E /* PostcardViewController.swift */,
-				272B9A2B1C04B6B400915B12 /* ViewController.swift */,
+				D138E2B31C4506B00096648E /* MedalViewController.swift */,
+				D138E2B51C450A7E0096648E /* DogtagViewController.swift */,
+				D138E2B71C450D0B0096648E /* PoppyViewController.swift */,
 				272B9A3B1C04B9C100915B12 /* Location.gpx */,
 				272B9A2D1C04B6B400915B12 /* Main.storyboard */,
 				272B9A301C04B6B400915B12 /* Assets.xcassets */,
@@ -229,7 +238,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D138E2B81C450D0B0096648E /* PoppyViewController.swift in Sources */,
 				D138E2B21C443D2B0096648E /* PostcardViewController.swift in Sources */,
+				D138E2B41C4506B00096648E /* MedalViewController.swift in Sources */,
+				D138E2B61C450A7E0096648E /* DogtagViewController.swift in Sources */,
 				F2CB692B1C15A200003AD345 /* GeocacheViewController.swift in Sources */,
 				F22BDFD31C0C548E0061AA78 /* IntroViewController.swift in Sources */,
 				D138E2B01C42F26E0096648E /* StoryViewController.swift in Sources */,
