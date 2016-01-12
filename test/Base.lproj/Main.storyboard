@@ -179,16 +179,6 @@
                                     <constraint firstAttribute="width" secondItem="moZ-75-hZh" secondAttribute="height" multiplier="560:401" id="Tqb-Rp-bVq"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQl-9G-sYk">
-                                <rect key="frame" x="253" y="550" width="113" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="sbh-Zn-Vji"/>
-                                </constraints>
-                                <state key="normal" title="View All Content"/>
-                                <connections>
-                                    <segue destination="hah-Md-vdr" kind="show" identifier="content" id="BNe-JJ-VbO"/>
-                                </connections>
-                            </button>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="postcard" translatesAutoresizingMaskIntoConstraints="NO" id="oPd-Lp-c5X">
                                 <rect key="frame" x="164" y="364" width="90" height="58"/>
                                 <gestureRecognizers/>
@@ -203,13 +193,6 @@
                                     <outletCollection property="gestureRecognizers" destination="bW8-UB-rNG" appends="YES" id="Kgu-nH-APR"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tag" translatesAutoresizingMaskIntoConstraints="NO" id="3zP-V9-b2W">
-                                <rect key="frame" x="61" y="465" width="79" height="70"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="3Ih-7U-ZAx" appends="YES" id="bk4-Na-Ubj"/>
-                                </connections>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled-6" translatesAutoresizingMaskIntoConstraints="NO" id="Qp7-VZ-csv">
                                 <rect key="frame" x="131" y="142" width="261" height="230"/>
                             </imageView>
@@ -221,7 +204,7 @@
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="poppy" translatesAutoresizingMaskIntoConstraints="NO" id="vL9-y2-Ogs">
-                                <rect key="frame" x="176" y="433" width="66" height="102"/>
+                                <rect key="frame" x="176" y="439" width="66" height="102"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="kr0-Hf-nvy" appends="YES" id="tKg-FG-kOE"/>
@@ -234,6 +217,19 @@
                                     <outletCollection property="gestureRecognizers" destination="SwI-iq-EnC" appends="YES" id="seg-dC-aHF"/>
                                 </connections>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please select what content you would like to view" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEh-Np-m1A">
+                                <rect key="frame" x="20" y="554" width="568" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tag" translatesAutoresizingMaskIntoConstraints="NO" id="3zP-V9-b2W">
+                                <rect key="frame" x="61" y="465" width="79" height="70"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3Ih-7U-ZAx" appends="YES" id="bk4-Na-Ubj"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -243,9 +239,7 @@
                             <constraint firstItem="rq0-T2-OGE" firstAttribute="bottom" secondItem="wnV-R3-kVD" secondAttribute="top" id="Rke-gJ-igv"/>
                             <constraint firstItem="rq0-T2-OGE" firstAttribute="top" secondItem="zaW-1f-dng" secondAttribute="top" id="Z01-tA-GiL"/>
                             <constraint firstItem="moZ-75-hZh" firstAttribute="top" secondItem="lDo-sn-pIZ" secondAttribute="bottom" constant="8" symbolic="YES" id="kdU-gG-eWb"/>
-                            <constraint firstItem="qQl-9G-sYk" firstAttribute="centerX" secondItem="moZ-75-hZh" secondAttribute="centerX" id="tF8-JY-cm6"/>
                             <constraint firstItem="rq0-T2-OGE" firstAttribute="leading" secondItem="zaW-1f-dng" secondAttribute="leading" id="wMD-m0-Zoe"/>
-                            <constraint firstAttribute="bottom" secondItem="qQl-9G-sYk" secondAttribute="bottom" constant="20" symbolic="YES" id="xSb-e3-l8U"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -348,33 +342,144 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="H9g-rN-fhj">
                                 <rect key="frame" x="0.0" y="-5" width="600" height="605"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="post" translatesAutoresizingMaskIntoConstraints="NO" id="e6e-lM-nyd">
-                                <rect key="frame" x="83" y="122" width="101" height="53"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="bmh-uU-2Kl">
-                                <rect key="frame" x="373" y="122" width="96" height="51"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DMY-tA-IcJ">
-                                <rect key="frame" x="32" y="262" width="537" height="310"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="310" id="GoW-U5-2r2"/>
-                                </constraints>
-                                <mutableString key="text">Embroidered silk postcards do not all date from the First World War – they were used for sentimental greetings in France before 1914. First exhibited in 1900, they continued to be manufactured until the 1950s. Production peaked during the 1914-18 war, as the format proved especially popular with British soldiers.  The hand-embroidery is thought to have been carried out in domestic houses as ‘out-work’ by civilians in France and Belgium, and in the UK by Belgian refugees. The designs were repeatedly embroidered on rolls of silk.  These were then sent to cities (mainly Paris) for cutting up, final assembly and distribution, in what was probably at that stage a factory operation.There was a resurgence in popularity in 1939-40, when they were also sent home by members of the second British Expeditionary Force. These later examples tend to have more muted colours, and a ‘crimpled cut’ edge to the card.  Above is a picture of a post card I sent to my wife during my time at war, here is the message in text:Feb. 24, 1940“I say, Dawn, This is a hell of a concern. They’re killing men here, I got shelled the other day, and it’s not nice.  I have been 3 times under Fritz’s influence.  Bugger my Tam o Shanter, but things will have to end or I am hopping it, but they will not give me the complete sack, what do you think I am, an Iron Lancer? Do you know, you are as lucky as a Dog with 2 Tam o Shanters for to escape this. Well, never mind, I hope it will not be long before we are Bussing again. I love you.  Love to Nellie and children, Clive.”</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="00H-DQ-Ckf" customClass="PostcardCollectionViewController">
+                                <rect key="frame" x="122" y="159" width="383" height="320"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LTh-Qo-lec">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" reuseIdentifier="gridOne" id="JW8-V1-PS9">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bench" translatesAutoresizingMaskIntoConstraints="NO" id="Mna-NQ-55P">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <size key="customSize" width="100" height="100"/>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="gridTwo" id="7Jn-xa-xvV">
+                                        <rect key="frame" x="141.5" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="something" translatesAutoresizingMaskIntoConstraints="NO" id="vxd-j4-tDl">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="vxd-j4-tDl" firstAttribute="top" secondItem="7Jn-xa-xvV" secondAttribute="top" id="3Nw-NT-McT"/>
+                                            <constraint firstAttribute="trailing" secondItem="vxd-j4-tDl" secondAttribute="trailing" id="UKp-SP-dQg"/>
+                                            <constraint firstItem="vxd-j4-tDl" firstAttribute="leading" secondItem="7Jn-xa-xvV" secondAttribute="leading" id="hZ8-2T-IWc"/>
+                                            <constraint firstAttribute="bottom" secondItem="vxd-j4-tDl" secondAttribute="bottom" id="qqP-CJ-e72"/>
+                                        </constraints>
+                                        <size key="customSize" width="100" height="100"/>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mbv-vy-4hT">
+                                        <rect key="frame" x="283" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coins" translatesAutoresizingMaskIntoConstraints="NO" id="Cf6-Ma-eGj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Cf6-Ma-eGj" secondAttribute="trailing" id="9KU-5H-yPA"/>
+                                            <constraint firstItem="Cf6-Ma-eGj" firstAttribute="top" secondItem="mbv-vy-4hT" secondAttribute="top" id="SPg-Fg-KUF"/>
+                                            <constraint firstAttribute="bottom" secondItem="Cf6-Ma-eGj" secondAttribute="bottom" id="Wwh-pn-eL6"/>
+                                            <constraint firstItem="Cf6-Ma-eGj" firstAttribute="leading" secondItem="mbv-vy-4hT" secondAttribute="leading" id="Z4T-4p-Fys"/>
+                                        </constraints>
+                                        <size key="customSize" width="100" height="100"/>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7Vo-4J-Pu2">
+                                        <rect key="frame" x="0.0" y="110" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <size key="customSize" width="100" height="100"/>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="JIN-wX-v8K">
+                                        <rect key="frame" x="141.5" y="110" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <size key="customSize" width="100" height="100"/>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="6sv-az-UWh">
+                                        <rect key="frame" x="283" y="110" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <size key="customSize" width="100" height="100"/>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="QN2-cp-S9Q">
+                                        <rect key="frame" x="0.0" y="220" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <size key="customSize" width="100" height="100"/>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7Av-19-K86">
+                                        <rect key="frame" x="141.5" y="220" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <size key="customSize" width="100" height="100"/>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="odu-mt-MEd">
+                                        <rect key="frame" x="283" y="220" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <size key="customSize" width="100" height="100"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="DMY-tA-IcJ" firstAttribute="leading" secondItem="Thb-82-Ja1" secondAttribute="leadingMargin" constant="12" id="4Zo-Fx-8FL"/>
-                            <constraint firstItem="e6e-lM-nyd" firstAttribute="top" secondItem="tgq-GU-tYC" secondAttribute="bottom" constant="45" id="DsM-0O-ynj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="00H-DQ-Ckf" secondAttribute="trailing" constant="75" id="0Cu-zP-Vhh"/>
+                            <constraint firstItem="nEE-sN-b4g" firstAttribute="top" secondItem="00H-DQ-Ckf" secondAttribute="bottom" constant="121" id="8c0-E3-aAZ"/>
                             <constraint firstItem="H9g-rN-fhj" firstAttribute="top" secondItem="Thb-82-Ja1" secondAttribute="topMargin" constant="-5" id="Ico-iY-2x5"/>
-                            <constraint firstItem="bmh-uU-2Kl" firstAttribute="top" secondItem="tgq-GU-tYC" secondAttribute="bottom" constant="45" id="XJ3-so-9Tw"/>
-                            <constraint firstItem="DMY-tA-IcJ" firstAttribute="centerX" secondItem="H9g-rN-fhj" secondAttribute="centerX" id="YXo-Tf-Cia"/>
+                            <constraint firstItem="00H-DQ-Ckf" firstAttribute="leading" secondItem="Thb-82-Ja1" secondAttribute="leadingMargin" constant="102" id="jEX-Yq-Owu"/>
                             <constraint firstItem="H9g-rN-fhj" firstAttribute="bottom" secondItem="nEE-sN-b4g" secondAttribute="top" id="mLE-bK-CwJ"/>
-                            <constraint firstItem="nEE-sN-b4g" firstAttribute="top" secondItem="DMY-tA-IcJ" secondAttribute="bottom" constant="28" id="mpD-CX-Tes"/>
                             <constraint firstItem="H9g-rN-fhj" firstAttribute="leading" secondItem="Thb-82-Ja1" secondAttribute="leading" id="pEb-aJ-IP2"/>
+                            <constraint firstItem="00H-DQ-Ckf" firstAttribute="top" secondItem="tgq-GU-tYC" secondAttribute="bottom" constant="95" id="vll-pM-oVf"/>
                             <constraint firstAttribute="trailing" secondItem="H9g-rN-fhj" secondAttribute="trailing" id="xWH-Ar-LDW"/>
                         </constraints>
                     </view>
@@ -399,7 +504,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="Aif-vi-Ktd">
                                 <rect key="frame" x="0.0" y="-18" width="600" height="618"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUd-BI-OOI">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUd-BI-OOI">
                                 <rect key="frame" x="43" y="141" width="503" height="419"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <mutableString key="text">One day, a young guy and a young girl fell in love.
@@ -443,13 +548,16 @@ The man said, “Without your permission, your mother sent me your photos. When 
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wY6-qO-gGc">
-                                <rect key="frame" x="20" y="97" width="565" height="21"/>
+                                <rect key="frame" x="124" y="94" width="565" height="21"/>
                                 <string key="text">Military: A beautiful true love story
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book" translatesAutoresizingMaskIntoConstraints="NO" id="dH9-n6-ksV">
+                                <rect key="frame" x="43" y="20" width="168" height="101"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -579,17 +687,14 @@ The man said, “Without your permission, your mother sent me your photos. When 
     <resources>
         <image name="Medal" width="86" height="168"/>
         <image name="Untitled-6" width="555" height="500"/>
+        <image name="bench" width="3264" height="2448"/>
         <image name="bestbox" width="1944" height="1965"/>
         <image name="book" width="175" height="133"/>
-        <image name="card" width="550" height="349"/>
         <image name="coins" width="184" height="183"/>
         <image name="newbackground" width="752" height="1334"/>
         <image name="poppy" width="141" height="217"/>
-        <image name="post" width="550" height="355"/>
         <image name="postcard" width="178" height="134"/>
+        <image name="something" width="2448" height="3264"/>
         <image name="tag" width="145" height="164"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="BNe-JJ-VbO"/>
-    </inferredMetricsTieBreakers>
 </document>
