@@ -212,10 +212,10 @@
             </objects>
             <point key="canvasLocation" x="2715" y="410"/>
         </scene>
-        <!--View Controller-->
+        <!--Medal View Controller-->
         <scene sceneID="Tdj-zG-vwV">
             <objects>
-                <viewController id="7Dp-YR-pAb" sceneMemberID="viewController">
+                <viewController id="7Dp-YR-pAb" customClass="MedalViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eYY-MF-yby"/>
                         <viewControllerLayoutGuide type="bottom" id="2kg-Jw-09b"/>
@@ -274,8 +274,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="H9g-rN-fhj">
-                                <rect key="frame" x="0.0" y="-5" width="600" height="605"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="post" translatesAutoresizingMaskIntoConstraints="NO" id="e6e-lM-nyd">
+                                <rect key="frame" x="83" y="122" width="101" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="bmh-uU-2Kl">
                                 <rect key="frame" x="373" y="122" width="96" height="51"/>
@@ -290,8 +290,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="post" translatesAutoresizingMaskIntoConstraints="NO" id="e6e-lM-nyd">
-                                <rect key="frame" x="83" y="122" width="101" height="53"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="H9g-rN-fhj">
+                                <rect key="frame" x="0.0" y="-5" width="600" height="605"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -313,10 +313,10 @@
             </objects>
             <point key="canvasLocation" x="3482" y="-279"/>
         </scene>
-        <!--Third View Controller-->
+        <!--Story View Controller-->
         <scene sceneID="c5T-QO-OQq">
             <objects>
-                <viewController id="hah-Md-vdr" customClass="ThirdViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hah-Md-vdr" customClass="StoryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a3H-sw-s4C"/>
                         <viewControllerLayoutGuide type="bottom" id="wF6-ii-BoC"/>
@@ -328,7 +328,15 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="Aif-vi-Ktd">
                                 <rect key="frame" x="0.0" y="-18" width="600" height="618"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUd-BI-OOI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wY6-qO-gGc">
+                                <rect key="frame" x="20" y="97" width="565" height="21"/>
+                                <string key="text">Military: A beautiful true love story
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUd-BI-OOI">
                                 <rect key="frame" x="43" y="141" width="503" height="419"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">One day, a young guy and a young girl fell in love.
@@ -371,14 +379,6 @@ The man said, “Without your permission, your mother sent me your photos. When 
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wY6-qO-gGc">
-                                <rect key="frame" x="20" y="97" width="565" height="21"/>
-                                <string key="text">Military: A beautiful true love story
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -399,10 +399,10 @@ The man said, “Without your permission, your mother sent me your photos. When 
             </objects>
             <point key="canvasLocation" x="3482" y="410"/>
         </scene>
-        <!--View Controller-->
+        <!--Dogtag View Controller-->
         <scene sceneID="Hqh-yF-5lQ">
             <objects>
-                <viewController id="b7A-ee-6ds" sceneMemberID="viewController">
+                <viewController id="b7A-ee-6ds" customClass="DogtagViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="s0T-O9-w2r"/>
                         <viewControllerLayoutGuide type="bottom" id="3F4-JP-SvX"/>
@@ -414,20 +414,33 @@ The man said, “Without your permission, your mother sent me your photos. When 
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="FFE-Tx-MKu">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xKk-12-a32">
-                                <rect key="frame" x="147" y="262" width="381" height="295"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xKk-12-a32">
+                                <rect key="frame" x="42" y="232" width="521" height="329"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="329" id="paa-Q1-yhC"/>
+                                </constraints>
+                                <mutableString key="text">Serial numbers were issued due to the growing number of soldiers with common names as Brown, Smith, etc. Serial numbers starting with various digits designated different service.¥	Serial numbers beginning with a "1" designated Regular Army¥	Serial numbers beginning with a "20" designated National Guard¥	Serial numbers beginning with a "3" designated Draftees¥	Serial numbers beginning with a "O-" designated Officers¥	Serial numbers beginning with "RA" designated Regular Army	Today, the Armed Forces uses a soldier's social security number as identification.These formats are the most common formats for the time period, however, it is possible that your tags were stamped differently. During WWII computers were not available so every issued dog tag had to be produced by hand. An operator during that time would be "lucky" to work on an electric dog tag machine. Yet, each letter had to be keyed by hand and mistakes made on the last line meant the entire tag had to be re-stamped. Therefore, it is understandable if operators got tired and omitted information or abbreviated names. It is even possible that the machinery may not have been working properly or letters were missing.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tag" translatesAutoresizingMaskIntoConstraints="NO" id="1nF-cd-BsL">
+                                <rect key="frame" x="200" y="55" width="262" height="177"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="xKk-12-a32" firstAttribute="leading" secondItem="Ubw-BZ-zwV" secondAttribute="leadingMargin" constant="22" id="1iv-cW-xWa"/>
                             <constraint firstItem="FFE-Tx-MKu" firstAttribute="top" secondItem="Ubw-BZ-zwV" secondAttribute="top" id="2rX-Uf-clu"/>
+                            <constraint firstItem="xKk-12-a32" firstAttribute="top" secondItem="1nF-cd-BsL" secondAttribute="bottom" id="4Ny-mV-cWj"/>
                             <constraint firstAttribute="trailing" secondItem="FFE-Tx-MKu" secondAttribute="trailing" id="60E-P3-WKB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1nF-cd-BsL" secondAttribute="trailing" constant="118" id="9SN-tL-FDV"/>
+                            <constraint firstItem="1nF-cd-BsL" firstAttribute="leading" secondItem="Ubw-BZ-zwV" secondAttribute="leadingMargin" constant="180" id="ADt-t3-vzM"/>
                             <constraint firstItem="FFE-Tx-MKu" firstAttribute="leading" secondItem="Ubw-BZ-zwV" secondAttribute="leading" id="HSw-ML-dN8"/>
+                            <constraint firstItem="1nF-cd-BsL" firstAttribute="top" secondItem="Ubw-BZ-zwV" secondAttribute="topMargin" constant="55" id="Hz4-rn-yk4"/>
                             <constraint firstItem="FFE-Tx-MKu" firstAttribute="bottom" secondItem="3F4-JP-SvX" secondAttribute="top" id="UeA-a3-GuU"/>
+                            <constraint firstItem="3F4-JP-SvX" firstAttribute="top" secondItem="xKk-12-a32" secondAttribute="bottom" constant="39" id="YTg-SX-GKn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xKk-12-a32" secondAttribute="trailing" constant="17" id="rTy-WM-f9G"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
