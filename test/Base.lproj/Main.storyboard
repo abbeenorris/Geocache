@@ -158,6 +158,10 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled-4" translatesAutoresizingMaskIntoConstraints="NO" id="Ofo-q2-QId">
                                 <rect key="frame" x="289" y="364" width="41" height="89"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bW8-UB-rNG" appends="YES" id="Kgu-nH-APR"/>
+                                </connections>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tag" translatesAutoresizingMaskIntoConstraints="NO" id="3zP-V9-b2W">
                                 <rect key="frame" x="61" y="465" width="79" height="70"/>
@@ -204,8 +208,59 @@
                         <segue destination="0EP-yd-Q4H" kind="show" identifier="Postcard" id="Oiv-nN-wVc"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="bW8-UB-rNG"/>
             </objects>
             <point key="canvasLocation" x="2715" y="410"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Tdj-zG-vwV">
+            <objects>
+                <viewController id="7Dp-YR-pAb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eYY-MF-yby"/>
+                        <viewControllerLayoutGuide type="bottom" id="2kg-Jw-09b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6r6-Ga-fdh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uxy-HI-ogN">
+                                <rect key="frame" x="43" y="210" width="515" height="355"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="355" id="7h3-kp-9hc"/>
+                                </constraints>
+                                <mutableString key="text">Date: 1945Campaign: Second World War 1939-45Branch of Service: British and Commonwealth ForcesRibbon: Equal stripes of dark blue, red and light blue symbolising the Royal Navy, Army and Royal Air Force respectively.Metal: BronzeSize: Height 44mm; max. width 38mmDescription: The six pointed star has a circular centre with the GRI/VI monogram, surmounted by a crown and inscribed THE 1939-45 STAR round the foot.Clasps: Battle of Britain.The first in a series of eight bronze stars issued for service in the Second World War, it was awarded to personnel who had completed six months’ service in specified operational commands overseas, between 3rd September 1939 and 2nd September1945, though in certain cases the minimum period was shortened.  Any service curtailed by death, injury or capture also qualified, as did the award of a decoration or a mention in despatches.  The clasp awarded to RAF aircrew for action during the Battle of Britain was denoted by a gilt rosette when the ribbon was worn alone.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled-4" translatesAutoresizingMaskIntoConstraints="NO" id="bi1-ee-2ge">
+                                <rect key="frame" x="265" y="80" width="84" height="129"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="L7k-Wn-8Fe">
+                                <rect key="frame" x="0.0" y="-5" width="600" height="605"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uxy-HI-ogN" firstAttribute="leading" secondItem="6r6-Ga-fdh" secondAttribute="leadingMargin" constant="23" id="0Lh-Xk-IbW"/>
+                            <constraint firstItem="2kg-Jw-09b" firstAttribute="top" secondItem="uxy-HI-ogN" secondAttribute="bottom" constant="35" id="0eA-pU-mM2"/>
+                            <constraint firstItem="uxy-HI-ogN" firstAttribute="centerX" secondItem="L7k-Wn-8Fe" secondAttribute="centerX" id="4f9-LE-gtL"/>
+                            <constraint firstItem="uxy-HI-ogN" firstAttribute="top" secondItem="bi1-ee-2ge" secondAttribute="bottom" constant="1" id="MuA-hN-RXX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bi1-ee-2ge" secondAttribute="trailing" constant="231" id="WHX-E8-28J"/>
+                            <constraint firstItem="bi1-ee-2ge" firstAttribute="top" secondItem="eYY-MF-yby" secondAttribute="bottom" constant="16" id="eXw-jU-jFH"/>
+                            <constraint firstItem="L7k-Wn-8Fe" firstAttribute="top" secondItem="6r6-Ga-fdh" secondAttribute="topMargin" constant="-5" id="fbK-eB-cMN"/>
+                            <constraint firstItem="L7k-Wn-8Fe" firstAttribute="leading" secondItem="6r6-Ga-fdh" secondAttribute="leading" id="g0t-Pw-830"/>
+                            <constraint firstItem="bi1-ee-2ge" firstAttribute="leading" secondItem="6r6-Ga-fdh" secondAttribute="leadingMargin" constant="245" id="ssD-h1-BFt"/>
+                            <constraint firstAttribute="trailing" secondItem="L7k-Wn-8Fe" secondAttribute="trailing" id="t8c-iG-DXV"/>
+                            <constraint firstItem="L7k-Wn-8Fe" firstAttribute="bottom" secondItem="2kg-Jw-09b" secondAttribute="top" id="ty5-S1-WKS"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zqd-UZ-RVS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3476" y="-960"/>
         </scene>
         <!--Postcard View Controller-->
         <scene sceneID="hAF-2Z-C2g">
@@ -222,11 +277,32 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="H9g-rN-fhj">
                                 <rect key="frame" x="0.0" y="-5" width="600" height="605"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="bmh-uU-2Kl">
+                                <rect key="frame" x="373" y="122" width="96" height="51"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DMY-tA-IcJ">
+                                <rect key="frame" x="32" y="262" width="537" height="310"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="310" id="GoW-U5-2r2"/>
+                                </constraints>
+                                <mutableString key="text">Embroidered silk postcards do not all date from the First World War – they were used for sentimental greetings in France before 1914. First exhibited in 1900, they continued to be manufactured until the 1950s. Production peaked during the 1914-18 war, as the format proved especially popular with British soldiers.  The hand-embroidery is thought to have been carried out in domestic houses as ‘out-work’ by civilians in France and Belgium, and in the UK by Belgian refugees. The designs were repeatedly embroidered on rolls of silk.  These were then sent to cities (mainly Paris) for cutting up, final assembly and distribution, in what was probably at that stage a factory operation.There was a resurgence in popularity in 1939-40, when they were also sent home by members of the second British Expeditionary Force. These later examples tend to have more muted colours, and a ‘crimpled cut’ edge to the card.  Above is a picture of a post card I sent to my wife during my time at war, here is the message in text:Feb. 24, 1940“I say, Dawn, This is a hell of a concern. They’re killing men here, I got shelled the other day, and it’s not nice.  I have been 3 times under Fritz’s influence.  Bugger my Tam o Shanter, but things will have to end or I am hopping it, but they will not give me the complete sack, what do you think I am, an Iron Lancer? Do you know, you are as lucky as a Dog with 2 Tam o Shanters for to escape this. Well, never mind, I hope it will not be long before we are Bussing again. I love you.  Love to Nellie and children, Clive.”</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="post" translatesAutoresizingMaskIntoConstraints="NO" id="e6e-lM-nyd">
+                                <rect key="frame" x="83" y="122" width="101" height="53"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="DMY-tA-IcJ" firstAttribute="leading" secondItem="Thb-82-Ja1" secondAttribute="leadingMargin" constant="12" id="4Zo-Fx-8FL"/>
+                            <constraint firstItem="e6e-lM-nyd" firstAttribute="top" secondItem="tgq-GU-tYC" secondAttribute="bottom" constant="45" id="DsM-0O-ynj"/>
                             <constraint firstItem="H9g-rN-fhj" firstAttribute="top" secondItem="Thb-82-Ja1" secondAttribute="topMargin" constant="-5" id="Ico-iY-2x5"/>
+                            <constraint firstItem="bmh-uU-2Kl" firstAttribute="top" secondItem="tgq-GU-tYC" secondAttribute="bottom" constant="45" id="XJ3-so-9Tw"/>
+                            <constraint firstItem="DMY-tA-IcJ" firstAttribute="centerX" secondItem="H9g-rN-fhj" secondAttribute="centerX" id="YXo-Tf-Cia"/>
                             <constraint firstItem="H9g-rN-fhj" firstAttribute="bottom" secondItem="nEE-sN-b4g" secondAttribute="top" id="mLE-bK-CwJ"/>
+                            <constraint firstItem="nEE-sN-b4g" firstAttribute="top" secondItem="DMY-tA-IcJ" secondAttribute="bottom" constant="28" id="mpD-CX-Tes"/>
                             <constraint firstItem="H9g-rN-fhj" firstAttribute="leading" secondItem="Thb-82-Ja1" secondAttribute="leading" id="pEb-aJ-IP2"/>
                             <constraint firstAttribute="trailing" secondItem="H9g-rN-fhj" secondAttribute="trailing" id="xWH-Ar-LDW"/>
                         </constraints>
@@ -295,8 +371,8 @@ The man said, “Without your permission, your mother sent me your photos. When 
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wY6-qO-gGc">
-                                <rect key="frame" x="179" y="97" width="261" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wY6-qO-gGc">
+                                <rect key="frame" x="20" y="97" width="565" height="21"/>
                                 <string key="text">Military: A beautiful true love story
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -312,7 +388,9 @@ The man said, “Without your permission, your mother sent me your photos. When 
                             <constraint firstItem="Aif-vi-Ktd" firstAttribute="bottom" secondItem="wF6-ii-BoC" secondAttribute="top" id="Lsy-49-L5v"/>
                             <constraint firstAttribute="trailing" secondItem="Aif-vi-Ktd" secondAttribute="trailing" id="MmS-Su-LQC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lUd-BI-OOI" secondAttribute="trailing" constant="34" id="W2f-Kc-6lO"/>
+                            <constraint firstItem="wY6-qO-gGc" firstAttribute="leading" secondItem="yen-dP-6LG" secondAttribute="leadingMargin" id="YxW-Mh-PjH"/>
                             <constraint firstItem="lUd-BI-OOI" firstAttribute="top" secondItem="a3H-sw-s4C" secondAttribute="bottom" constant="77" id="jmb-fe-PaA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wY6-qO-gGc" secondAttribute="trailing" constant="-5" id="lwM-5c-sLV"/>
                             <constraint firstItem="Aif-vi-Ktd" firstAttribute="top" secondItem="yen-dP-6LG" secondAttribute="topMargin" constant="7" id="s8M-Gk-Pg3"/>
                         </constraints>
                     </view>
@@ -320,6 +398,43 @@ The man said, “Without your permission, your mother sent me your photos. When 
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZH5-eU-xZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3482" y="410"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Hqh-yF-5lQ">
+            <objects>
+                <viewController id="b7A-ee-6ds" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s0T-O9-w2r"/>
+                        <viewControllerLayoutGuide type="bottom" id="3F4-JP-SvX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ubw-BZ-zwV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="FFE-Tx-MKu">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xKk-12-a32">
+                                <rect key="frame" x="147" y="262" width="381" height="295"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FFE-Tx-MKu" firstAttribute="top" secondItem="Ubw-BZ-zwV" secondAttribute="top" id="2rX-Uf-clu"/>
+                            <constraint firstAttribute="trailing" secondItem="FFE-Tx-MKu" secondAttribute="trailing" id="60E-P3-WKB"/>
+                            <constraint firstItem="FFE-Tx-MKu" firstAttribute="leading" secondItem="Ubw-BZ-zwV" secondAttribute="leading" id="HSw-ML-dN8"/>
+                            <constraint firstItem="FFE-Tx-MKu" firstAttribute="bottom" secondItem="3F4-JP-SvX" secondAttribute="top" id="UeA-a3-GuU"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yd5-IC-umL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3476" y="1093"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BeG-CJ-KRk">
@@ -346,13 +461,15 @@ The man said, “Without your permission, your mother sent me your photos. When 
         <image name="Untitled-6" width="555" height="500"/>
         <image name="bestbox" width="1944" height="1965"/>
         <image name="book" width="175" height="133"/>
+        <image name="card" width="550" height="349"/>
         <image name="coins" width="184" height="183"/>
         <image name="newbackground" width="752" height="1334"/>
         <image name="poppy" width="141" height="217"/>
+        <image name="post" width="550" height="355"/>
         <image name="postcard" width="178" height="134"/>
         <image name="tag" width="145" height="164"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rPT-15-3Wj"/>
+        <segue reference="BNe-JJ-VbO"/>
     </inferredMetricsTieBreakers>
 </document>
