@@ -291,29 +291,27 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="L7k-Wn-8Fe">
                                 <rect key="frame" x="0.0" y="-5" width="600" height="605"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uxy-HI-ogN">
-                                <rect key="frame" x="43" y="210" width="515" height="355"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uxy-HI-ogN">
+                                <rect key="frame" x="43" y="154" width="514" height="411"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="355" id="7h3-kp-9hc"/>
-                                </constraints>
                                 <mutableString key="text">Date: 1945Campaign: Second World War 1939-45Branch of Service: British and Commonwealth ForcesRibbon: Equal stripes of dark blue, red and light blue symbolising the Royal Navy, Army and Royal Air Force respectively.Metal: BronzeSize: Height 44mm; max. width 38mmDescription: The six pointed star has a circular centre with the GRI/VI monogram, surmounted by a crown and inscribed THE 1939-45 STAR round the foot.Clasps: Battle of Britain.The first in a series of eight bronze stars issued for service in the Second World War, it was awarded to personnel who had completed six months’ service in specified operational commands overseas, between 3rd September 1939 and 2nd September1945, though in certain cases the minimum period was shortened.  Any service curtailed by death, injury or capture also qualified, as did the award of a decoration or a mention in despatches.  The clasp awarded to RAF aircrew for action during the Battle of Britain was denoted by a gilt rosette when the ribbon was worn alone.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Medal" translatesAutoresizingMaskIntoConstraints="NO" id="bi1-ee-2ge">
-                                <rect key="frame" x="43" y="73" width="84" height="129"/>
+                                <rect key="frame" x="43" y="73" width="57" height="81"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="uxy-HI-ogN" firstAttribute="leading" secondItem="6r6-Ga-fdh" secondAttribute="leadingMargin" constant="23" id="0Lh-Xk-IbW"/>
-                            <constraint firstItem="2kg-Jw-09b" firstAttribute="top" secondItem="uxy-HI-ogN" secondAttribute="bottom" constant="35" id="0eA-pU-mM2"/>
-                            <constraint firstItem="uxy-HI-ogN" firstAttribute="centerX" secondItem="L7k-Wn-8Fe" secondAttribute="centerX" id="4f9-LE-gtL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uxy-HI-ogN" secondAttribute="trailing" constant="23" id="Elb-iC-FGh"/>
+                            <constraint firstItem="2kg-Jw-09b" firstAttribute="top" secondItem="uxy-HI-ogN" secondAttribute="bottom" constant="35" id="TvW-hl-2X1"/>
                             <constraint firstItem="L7k-Wn-8Fe" firstAttribute="top" secondItem="6r6-Ga-fdh" secondAttribute="topMargin" constant="-5" id="fbK-eB-cMN"/>
                             <constraint firstItem="L7k-Wn-8Fe" firstAttribute="leading" secondItem="6r6-Ga-fdh" secondAttribute="leading" id="g0t-Pw-830"/>
+                            <constraint firstItem="uxy-HI-ogN" firstAttribute="top" secondItem="eYY-MF-yby" secondAttribute="bottom" constant="106" id="jTU-MC-V1N"/>
                             <constraint firstAttribute="trailing" secondItem="L7k-Wn-8Fe" secondAttribute="trailing" id="t8c-iG-DXV"/>
                             <constraint firstItem="L7k-Wn-8Fe" firstAttribute="bottom" secondItem="2kg-Jw-09b" secondAttribute="top" id="ty5-S1-WKS"/>
+                            <constraint firstItem="uxy-HI-ogN" firstAttribute="leading" secondItem="6r6-Ga-fdh" secondAttribute="leadingMargin" constant="23" id="wTj-lZ-ttO"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -335,31 +333,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="H9g-rN-fhj">
-                                <rect key="frame" x="0.0" y="-5" width="600" height="605"/>
+                                <rect key="frame" x="0.0" y="-19" width="600" height="619"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book" translatesAutoresizingMaskIntoConstraints="NO" id="IGk-66-aik">
-                                <rect key="frame" x="93" y="241" width="190" height="118"/>
-                                <gestureRecognizers/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Geo3" translatesAutoresizingMaskIntoConstraints="NO" id="S09-l8-QyE">
+                                <rect key="frame" x="20" y="72" width="569" height="411"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coins" translatesAutoresizingMaskIntoConstraints="NO" id="eVu-SU-oX2">
-                                <rect key="frame" x="317" y="146" width="157" height="126"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgW-Jn-Ntr">
+                                <rect key="frame" x="15" y="499" width="574" height="30"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="JNU-H4-gu7" appends="YES" id="Ueq-ts-OaF"/>
+                                    <action selector="playRoundTapped:" destination="0EP-yd-Q4H" eventType="touchUpInside" id="rdT-Oc-xfZ"/>
                                 </connections>
-                            </imageView>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Images local to this Geocache" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYj-Hl-TK5">
+                                <rect key="frame" x="86" y="537" width="252" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="H9g-rN-fhj" firstAttribute="top" secondItem="Thb-82-Ja1" secondAttribute="topMargin" constant="-5" id="Ico-iY-2x5"/>
-                            <constraint firstItem="H9g-rN-fhj" firstAttribute="bottom" secondItem="nEE-sN-b4g" secondAttribute="top" id="mLE-bK-CwJ"/>
-                            <constraint firstItem="H9g-rN-fhj" firstAttribute="leading" secondItem="Thb-82-Ja1" secondAttribute="leading" id="pEb-aJ-IP2"/>
-                            <constraint firstAttribute="trailing" secondItem="H9g-rN-fhj" secondAttribute="trailing" id="xWH-Ar-LDW"/>
+                            <constraint firstItem="hgW-Jn-Ntr" firstAttribute="top" secondItem="S09-l8-QyE" secondAttribute="bottom" constant="16" id="4JJ-Zn-Jv0"/>
+                            <constraint firstAttribute="trailing" secondItem="H9g-rN-fhj" secondAttribute="trailing" id="8sc-Ct-6BU"/>
+                            <constraint firstItem="H9g-rN-fhj" firstAttribute="leading" secondItem="Thb-82-Ja1" secondAttribute="leading" id="9bH-ds-G4U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S09-l8-QyE" secondAttribute="trailing" constant="-9" id="BUR-D0-0N9"/>
+                            <constraint firstItem="H9g-rN-fhj" firstAttribute="bottom" secondItem="nEE-sN-b4g" secondAttribute="top" id="Gmb-1n-aIC"/>
+                            <constraint firstItem="S09-l8-QyE" firstAttribute="top" secondItem="tgq-GU-tYC" secondAttribute="bottom" constant="8" id="IIg-7c-MtF"/>
+                            <constraint firstItem="S09-l8-QyE" firstAttribute="leading" secondItem="Thb-82-Ja1" secondAttribute="leadingMargin" id="NpD-it-OJS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hgW-Jn-Ntr" secondAttribute="trailing" constant="-9" id="UMI-uG-BA9"/>
+                            <constraint firstItem="H9g-rN-fhj" firstAttribute="top" secondItem="Thb-82-Ja1" secondAttribute="topMargin" constant="-19" id="h8H-qx-63K"/>
+                            <constraint firstItem="hgW-Jn-Ntr" firstAttribute="leading" secondItem="Thb-82-Ja1" secondAttribute="leadingMargin" constant="-5" id="vOy-mn-ZMf"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="firstImageView" destination="S09-l8-QyE" id="kmZ-xD-CyH"/>
+                        <outlet property="playRoundButton" destination="hgW-Jn-Ntr" id="Yho-Gn-pl9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Wj-GS-Dks" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="JNU-H4-gu7"/>
             </objects>
             <point key="canvasLocation" x="3482" y="-279"/>
         </scene>
@@ -378,12 +391,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="Aif-vi-Ktd">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUd-BI-OOI">
-                                <rect key="frame" x="38" y="173" width="503" height="419"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUd-BI-OOI">
+                                <rect key="frame" x="48" y="129" width="503" height="419"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="419" id="mVb-Y7-p0b"/>
-                                </constraints>
                                 <mutableString key="text">One day, a young guy and a young girl fell in love.
 
 But the guy came from a poor family. The girl’s parents weren’t too happy.
@@ -421,14 +431,11 @@ That was when the young man entered her room with a bouquet of flowers. He knelt
 The girl covered her face with her hands and said, “I’m ugly!”
 
 The man said, “Without your permission, your mother sent me your photos. When I saw your photos, I realized that nothing has changed. You’re still the person I fell in love. You’re still as beautiful as ever. Because I love you!”</mutableString>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book" translatesAutoresizingMaskIntoConstraints="NO" id="dH9-n6-ksV">
-                                <rect key="frame" x="38" y="72" width="168" height="101"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wY6-qO-gGc">
-                                <rect key="frame" x="13" y="94" width="580" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wY6-qO-gGc">
+                                <rect key="frame" x="278" y="100" width="266" height="21"/>
                                 <string key="text">Military: A beautiful true love story
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -438,19 +445,15 @@ The man said, “Without your permission, your mother sent me your photos. When 
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lUd-BI-OOI" firstAttribute="leading" secondItem="dH9-n6-ksV" secondAttribute="leading" id="6bb-UM-fkY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wY6-qO-gGc" secondAttribute="trailing" constant="36" id="0W3-Px-62J"/>
                             <constraint firstItem="Aif-vi-Ktd" firstAttribute="top" secondItem="yen-dP-6LG" secondAttribute="top" id="9f9-Yv-hTB"/>
-                            <constraint firstItem="dH9-n6-ksV" firstAttribute="top" secondItem="a3H-sw-s4C" secondAttribute="bottom" constant="8" id="Ecb-XY-NYr"/>
                             <constraint firstItem="Aif-vi-Ktd" firstAttribute="bottom" secondItem="wF6-ii-BoC" secondAttribute="top" id="NHb-3r-iTU"/>
+                            <constraint firstItem="lUd-BI-OOI" firstAttribute="leading" secondItem="yen-dP-6LG" secondAttribute="leadingMargin" constant="28" id="NJG-zX-dlD"/>
                             <constraint firstAttribute="trailing" secondItem="Aif-vi-Ktd" secondAttribute="trailing" id="NdT-IH-EWt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lUd-BI-OOI" secondAttribute="trailing" constant="39" id="PTr-sJ-ch9"/>
-                            <constraint firstItem="wF6-ii-BoC" firstAttribute="top" secondItem="lUd-BI-OOI" secondAttribute="bottom" constant="8" symbolic="YES" id="Se4-fb-D8H"/>
                             <constraint firstItem="Aif-vi-Ktd" firstAttribute="leading" secondItem="yen-dP-6LG" secondAttribute="leading" id="UaT-2C-xWr"/>
-                            <constraint firstItem="lUd-BI-OOI" firstAttribute="top" secondItem="dH9-n6-ksV" secondAttribute="bottom" id="dvP-4T-uy1"/>
-                            <constraint firstItem="dH9-n6-ksV" firstAttribute="leading" secondItem="yen-dP-6LG" secondAttribute="leadingMargin" constant="18" id="nKp-Ug-EZr"/>
-                            <constraint firstItem="lUd-BI-OOI" firstAttribute="top" secondItem="dH9-n6-ksV" secondAttribute="bottom" id="pW6-vI-N1m"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dH9-n6-ksV" secondAttribute="trailing" constant="374" id="rmq-2s-3B8"/>
-                            <constraint firstItem="lUd-BI-OOI" firstAttribute="leading" secondItem="yen-dP-6LG" secondAttribute="leadingMargin" constant="18" id="u1c-Hh-UBd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lUd-BI-OOI" secondAttribute="trailing" constant="29" id="Uzt-vT-wlZ"/>
+                            <constraint firstItem="wF6-ii-BoC" firstAttribute="top" secondItem="lUd-BI-OOI" secondAttribute="bottom" constant="40" id="dFc-cO-8hT"/>
+                            <constraint firstItem="lUd-BI-OOI" firstAttribute="top" secondItem="wY6-qO-gGc" secondAttribute="bottom" constant="8" id="i3t-Rv-ikl"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -566,6 +569,7 @@ The man said, “Without your permission, your mother sent me your photos. When 
         </scene>
     </scenes>
     <resources>
+        <image name="Geo3" width="500" height="375"/>
         <image name="Medal" width="86" height="168"/>
         <image name="Untitled-6" width="555" height="500"/>
         <image name="bestbox" width="1944" height="1965"/>
