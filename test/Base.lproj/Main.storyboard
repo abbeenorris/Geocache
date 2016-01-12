@@ -260,7 +260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zqd-UZ-RVS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3476" y="-960"/>
+            <point key="canvasLocation" x="2840" y="-290"/>
         </scene>
         <!--Postcard View Controller-->
         <scene sceneID="hAF-2Z-C2g">
@@ -339,7 +339,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUd-BI-OOI">
                                 <rect key="frame" x="43" y="141" width="503" height="419"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">One day, a young guy and a young girl fell in love.
+                                <mutableString key="text">One day, a young guy and a young girl fell in love.
 
 But the guy came from a poor family. The girl’s parents weren’t too happy.
 
@@ -375,7 +375,7 @@ That was when the young man entered her room with a bouquet of flowers. He knelt
 
 The girl covered her face with her hands and said, “I’m ugly!”
 
-The man said, “Without your permission, your mother sent me your photos. When I saw your photos, I realized that nothing has changed. You’re still the person I fell in love. You’re still as beautiful as ever. Because I love you!”</string>
+The man said, “Without your permission, your mother sent me your photos. When I saw your photos, I realized that nothing has changed. You’re still the person I fell in love. You’re still as beautiful as ever. Because I love you!”</mutableString>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
