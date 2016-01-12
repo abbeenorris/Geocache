@@ -129,23 +129,27 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="yDY-5F-I31">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coins" translatesAutoresizingMaskIntoConstraints="NO" id="rxC-5A-fgb">
-                                <rect key="frame" x="31" y="79" width="132" height="122"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kJb-qi-8Nc">
-                                <rect key="frame" x="37" y="200" width="526" height="359"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kJb-qi-8Nc">
+                                <rect key="frame" x="37" y="133" width="526" height="433"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <mutableString key="text">Country: United KingdomYears: 1937-1946Value: 6 Pence = 1/2 Shilling = 1/40 Pound Sterling (1/40 LSD)Metal: Silver (.500)Weight:2.82 gDiameter: 19.3 mmThickness: 1 mmShape: RoundOrientation: Medal alignment ↑↑Demonetized: 1980References: KM# 852George V Bare HeadIssued as part of the first coinage of George VI in 0.500 fine, prior to the coinage reform in 1947 to cupro nickel.Obverse:Bare head of George VI facing left.The obverse inscription reads:GEORGIVS VI D G BR OMN REXReverse:The reverse design consists of a lion rampant on crown with the inscription:FID DEF IND IMP19 45SIXPENCE</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coins" translatesAutoresizingMaskIntoConstraints="NO" id="rxC-5A-fgb">
+                                <rect key="frame" x="37" y="64" width="78" height="70"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="yDY-5F-I31" firstAttribute="top" secondItem="Yye-He-wLo" secondAttribute="top" id="5dh-J3-C8N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kJb-qi-8Nc" secondAttribute="trailing" constant="17" id="BXJ-tP-MIs"/>
                             <constraint firstAttribute="trailing" secondItem="yDY-5F-I31" secondAttribute="trailing" id="F9h-1B-fW6"/>
                             <constraint firstItem="yDY-5F-I31" firstAttribute="bottom" secondItem="tgG-B6-CXq" secondAttribute="top" id="ZVN-ek-Ld9"/>
                             <constraint firstItem="yDY-5F-I31" firstAttribute="leading" secondItem="Yye-He-wLo" secondAttribute="leading" id="h4E-q5-e9B"/>
+                            <constraint firstItem="kJb-qi-8Nc" firstAttribute="top" secondItem="bU2-vP-qri" secondAttribute="bottom" constant="69" id="sGD-Vr-LEE"/>
+                            <constraint firstItem="kJb-qi-8Nc" firstAttribute="leading" secondItem="Yye-He-wLo" secondAttribute="leadingMargin" constant="17" id="uRX-Lr-9Pm"/>
+                            <constraint firstItem="tgG-B6-CXq" firstAttribute="top" secondItem="kJb-qi-8Nc" secondAttribute="bottom" constant="34" id="xOI-zk-XEP"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -189,6 +193,13 @@
                                     <outletCollection property="gestureRecognizers" destination="bW8-UB-rNG" appends="YES" id="Kgu-nH-APR"/>
                                 </connections>
                             </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tag" translatesAutoresizingMaskIntoConstraints="NO" id="3zP-V9-b2W">
+                                <rect key="frame" x="61" y="465" width="79" height="70"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3Ih-7U-ZAx" appends="YES" id="bk4-Na-Ubj"/>
+                                </connections>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled-6" translatesAutoresizingMaskIntoConstraints="NO" id="Qp7-VZ-csv">
                                 <rect key="frame" x="131" y="142" width="261" height="230"/>
                             </imageView>
@@ -213,30 +224,26 @@
                                     <outletCollection property="gestureRecognizers" destination="SwI-iq-EnC" appends="YES" id="seg-dC-aHF"/>
                                 </connections>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please select what content you would like to view" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEh-Np-m1A">
-                                <rect key="frame" x="53" y="543" width="392" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please select what content you would" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEh-Np-m1A">
+                                <rect key="frame" x="15" y="543" width="324" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tag" translatesAutoresizingMaskIntoConstraints="NO" id="3zP-V9-b2W">
-                                <rect key="frame" x="61" y="465" width="79" height="70"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="3Ih-7U-ZAx" appends="YES" id="bk4-Na-Ubj"/>
-                                </connections>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" like to view" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhR-Wx-guj">
+                                <rect key="frame" x="133" y="579" width="89" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="rq0-T2-OGE" firstAttribute="centerX" secondItem="moZ-75-hZh" secondAttribute="centerX" id="C3P-ff-dND"/>
                             <constraint firstAttribute="trailing" secondItem="rq0-T2-OGE" secondAttribute="trailing" id="EEG-g0-YQf"/>
-                            <constraint firstItem="wnV-R3-kVD" firstAttribute="top" secondItem="BEh-Np-m1A" secondAttribute="bottom" constant="20" id="FYg-ZW-0OQ"/>
                             <constraint firstItem="moZ-75-hZh" firstAttribute="leading" secondItem="zaW-1f-dng" secondAttribute="leadingMargin" id="KbB-Iz-OgK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="BEh-Np-m1A" secondAttribute="trailing" constant="20" id="MD6-SL-ugs"/>
                             <constraint firstItem="rq0-T2-OGE" firstAttribute="bottom" secondItem="wnV-R3-kVD" secondAttribute="top" id="Rke-gJ-igv"/>
                             <constraint firstItem="rq0-T2-OGE" firstAttribute="top" secondItem="zaW-1f-dng" secondAttribute="top" id="Z01-tA-GiL"/>
-                            <constraint firstItem="BEh-Np-m1A" firstAttribute="leading" secondItem="zaW-1f-dng" secondAttribute="leadingMargin" constant="33" id="c7j-MH-Faj"/>
                             <constraint firstItem="moZ-75-hZh" firstAttribute="top" secondItem="lDo-sn-pIZ" secondAttribute="bottom" constant="8" symbolic="YES" id="kdU-gG-eWb"/>
                             <constraint firstItem="rq0-T2-OGE" firstAttribute="leading" secondItem="zaW-1f-dng" secondAttribute="leading" id="wMD-m0-Zoe"/>
                         </constraints>
@@ -291,27 +298,27 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="L7k-Wn-8Fe">
                                 <rect key="frame" x="0.0" y="-5" width="600" height="605"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uxy-HI-ogN">
-                                <rect key="frame" x="43" y="154" width="514" height="411"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Medal" translatesAutoresizingMaskIntoConstraints="NO" id="Pdc-br-D8Z">
+                                <rect key="frame" x="43" y="64" width="60" height="85"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uxy-HI-ogN">
+                                <rect key="frame" x="43" y="146" width="514" height="420"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <mutableString key="text">Date: 1945Campaign: Second World War 1939-45Branch of Service: British and Commonwealth ForcesRibbon: Equal stripes of dark blue, red and light blue symbolising the Royal Navy, Army and Royal Air Force respectively.Metal: BronzeSize: Height 44mm; max. width 38mmDescription: The six pointed star has a circular centre with the GRI/VI monogram, surmounted by a crown and inscribed THE 1939-45 STAR round the foot.Clasps: Battle of Britain.The first in a series of eight bronze stars issued for service in the Second World War, it was awarded to personnel who had completed six months’ service in specified operational commands overseas, between 3rd September 1939 and 2nd September1945, though in certain cases the minimum period was shortened.  Any service curtailed by death, injury or capture also qualified, as did the award of a decoration or a mention in despatches.  The clasp awarded to RAF aircrew for action during the Battle of Britain was denoted by a gilt rosette when the ribbon was worn alone.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Medal" translatesAutoresizingMaskIntoConstraints="NO" id="bi1-ee-2ge">
-                                <rect key="frame" x="43" y="73" width="57" height="81"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="uxy-HI-ogN" secondAttribute="trailing" constant="23" id="Elb-iC-FGh"/>
-                            <constraint firstItem="2kg-Jw-09b" firstAttribute="top" secondItem="uxy-HI-ogN" secondAttribute="bottom" constant="35" id="TvW-hl-2X1"/>
+                            <constraint firstItem="2kg-Jw-09b" firstAttribute="top" secondItem="uxy-HI-ogN" secondAttribute="bottom" constant="34" id="5KJ-lR-uh8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uxy-HI-ogN" secondAttribute="trailing" constant="23" id="W2t-NT-Ult"/>
+                            <constraint firstItem="uxy-HI-ogN" firstAttribute="top" secondItem="eYY-MF-yby" secondAttribute="bottom" constant="82" id="ZrN-CC-ujQ"/>
                             <constraint firstItem="L7k-Wn-8Fe" firstAttribute="top" secondItem="6r6-Ga-fdh" secondAttribute="topMargin" constant="-5" id="fbK-eB-cMN"/>
                             <constraint firstItem="L7k-Wn-8Fe" firstAttribute="leading" secondItem="6r6-Ga-fdh" secondAttribute="leading" id="g0t-Pw-830"/>
-                            <constraint firstItem="uxy-HI-ogN" firstAttribute="top" secondItem="eYY-MF-yby" secondAttribute="bottom" constant="106" id="jTU-MC-V1N"/>
+                            <constraint firstItem="uxy-HI-ogN" firstAttribute="leading" secondItem="6r6-Ga-fdh" secondAttribute="leadingMargin" constant="23" id="kI6-af-SZa"/>
                             <constraint firstAttribute="trailing" secondItem="L7k-Wn-8Fe" secondAttribute="trailing" id="t8c-iG-DXV"/>
                             <constraint firstItem="L7k-Wn-8Fe" firstAttribute="bottom" secondItem="2kg-Jw-09b" secondAttribute="top" id="ty5-S1-WKS"/>
-                            <constraint firstItem="uxy-HI-ogN" firstAttribute="leading" secondItem="6r6-Ga-fdh" secondAttribute="leadingMargin" constant="23" id="wTj-lZ-ttO"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -478,28 +485,26 @@ The man said, “Without your permission, your mother sent me your photos. When 
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xKk-12-a32">
-                                <rect key="frame" x="42" y="232" width="521" height="329"/>
+                                <rect key="frame" x="40" y="155" width="521" height="399"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="329" id="paa-Q1-yhC"/>
-                                </constraints>
                                 <mutableString key="text">Serial numbers were issued due to the growing number of soldiers with common names as Brown, Smith, etc. Serial numbers starting with various digits designated different service.¥	Serial numbers beginning with a "1" designated Regular Army¥	Serial numbers beginning with a "20" designated National Guard¥	Serial numbers beginning with a "3" designated Draftees¥	Serial numbers beginning with a "O-" designated Officers¥	Serial numbers beginning with "RA" designated Regular Army	Today, the Armed Forces uses a soldier's social security number as identification.These formats are the most common formats for the time period, however, it is possible that your tags were stamped differently. During WWII computers were not available so every issued dog tag had to be produced by hand. An operator during that time would be "lucky" to work on an electric dog tag machine. Yet, each letter had to be keyed by hand and mistakes made on the last line meant the entire tag had to be re-stamped. Therefore, it is understandable if operators got tired and omitted information or abbreviated names. It is even possible that the machinery may not have been working properly or letters were missing.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tag" translatesAutoresizingMaskIntoConstraints="NO" id="1nF-cd-BsL">
-                                <rect key="frame" x="42" y="80" width="120" height="144"/>
+                                <rect key="frame" x="40" y="64" width="96" height="93"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xKk-12-a32" firstAttribute="leading" secondItem="Ubw-BZ-zwV" secondAttribute="leadingMargin" constant="22" id="1iv-cW-xWa"/>
                             <constraint firstItem="FFE-Tx-MKu" firstAttribute="top" secondItem="Ubw-BZ-zwV" secondAttribute="top" id="2rX-Uf-clu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xKk-12-a32" secondAttribute="trailing" constant="19" id="4ds-51-vB9"/>
                             <constraint firstAttribute="trailing" secondItem="FFE-Tx-MKu" secondAttribute="trailing" id="60E-P3-WKB"/>
+                            <constraint firstItem="3F4-JP-SvX" firstAttribute="top" secondItem="xKk-12-a32" secondAttribute="bottom" constant="46" id="9TM-Vr-mO5"/>
                             <constraint firstItem="FFE-Tx-MKu" firstAttribute="leading" secondItem="Ubw-BZ-zwV" secondAttribute="leading" id="HSw-ML-dN8"/>
                             <constraint firstItem="FFE-Tx-MKu" firstAttribute="bottom" secondItem="3F4-JP-SvX" secondAttribute="top" id="UeA-a3-GuU"/>
-                            <constraint firstItem="3F4-JP-SvX" firstAttribute="top" secondItem="xKk-12-a32" secondAttribute="bottom" constant="39" id="YTg-SX-GKn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xKk-12-a32" secondAttribute="trailing" constant="17" id="rTy-WM-f9G"/>
+                            <constraint firstItem="xKk-12-a32" firstAttribute="top" secondItem="s0T-O9-w2r" secondAttribute="bottom" constant="91" id="i2h-zr-vK9"/>
+                            <constraint firstItem="xKk-12-a32" firstAttribute="leading" secondItem="Ubw-BZ-zwV" secondAttribute="leadingMargin" constant="20" id="nQA-ts-ArD"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -523,23 +528,27 @@ The man said, “Without your permission, your mother sent me your photos. When 
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="e9A-ig-0Q3">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wJp-So-Lai">
-                                <rect key="frame" x="41" y="209" width="518" height="356"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wJp-So-Lai">
+                                <rect key="frame" x="41" y="170" width="518" height="401"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <mutableString key="text">Remembrance is part of modern British life, culture and heritage. It becomes a particular feature of the public calendar each year when public, private, formal and informal Remembrance events take place throughout the UK. Remembrance day is on the Sunday, November 13In the spring of 1915, shortly after losing a friend in Ypres, a Canadian doctor, Lt Col John McCrae was inspired by the sight of poppies growing in battle scared fields, to write a now famous poem called 'In Flanders Fields'. After the First World War, the poppy was adopted as a symbol of Remembrance.IN FLANDERS FIELDS:In Flanders' fields the poppies blowBetween the crosses, row on row,That mark our place: and in the skyThe larks, still bravely singing, flyScarce heard amid the guns below.We are the dead. Short days agoWe lived, felt dawn, saw sunset glow,Loved and were loved, and now we lieIn Flanders' fields.Take up our quarrel with the foe;To you from failing hands we throwThe torch; be yours to hold it high,If ye break faith with us who dieWe shall not sleep, though poppies grow  In Flanders' Fields.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="poppy" translatesAutoresizingMaskIntoConstraints="NO" id="cpq-UY-ofp">
-                                <rect key="frame" x="48" y="72" width="98" height="129"/>
+                                <rect key="frame" x="34" y="72" width="84" height="102"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="e9A-ig-0Q3" firstAttribute="top" secondItem="wbU-xw-fEY" secondAttribute="top" id="RtW-tg-Qg0"/>
                             <constraint firstItem="e9A-ig-0Q3" firstAttribute="bottom" secondItem="H4u-9C-2on" secondAttribute="top" id="XWC-PU-2Rl"/>
+                            <constraint firstItem="wJp-So-Lai" firstAttribute="leading" secondItem="wbU-xw-fEY" secondAttribute="leadingMargin" constant="21" id="cFV-Bn-u8n"/>
                             <constraint firstAttribute="trailing" secondItem="e9A-ig-0Q3" secondAttribute="trailing" id="edx-mQ-2A1"/>
+                            <constraint firstItem="wJp-So-Lai" firstAttribute="top" secondItem="m1e-K2-jV5" secondAttribute="bottom" constant="106" id="o60-Qy-jXs"/>
                             <constraint firstItem="e9A-ig-0Q3" firstAttribute="leading" secondItem="wbU-xw-fEY" secondAttribute="leading" id="odL-V5-Qk8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wJp-So-Lai" secondAttribute="trailing" constant="21" id="uhw-Y2-o2X"/>
+                            <constraint firstItem="H4u-9C-2on" firstAttribute="top" secondItem="wJp-So-Lai" secondAttribute="bottom" constant="29" id="y7Y-6c-eZI"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

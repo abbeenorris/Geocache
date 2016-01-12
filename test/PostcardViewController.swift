@@ -18,8 +18,8 @@ class PostcardViewController: UIViewController {
     
     @IBAction func playRoundTapped(sender: UIButton) {
         
-        var firstRandomNumber = arc4random_uniform(6) + 1
-        var firstCardString:String = String(format: "Geo%i", firstRandomNumber)
+        let firstRandomNumber = arc4random_uniform(6) + 1
+        let firstCardString:String = String(format: "Geo%i", firstRandomNumber)
     
         self.firstImageView.image = UIImage(named: firstCardString)
 
