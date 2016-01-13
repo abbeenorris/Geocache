@@ -53,6 +53,7 @@ extension ViewController: CLLocationManagerDelegate {
             AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
             performSegueWithIdentifier("ViewGeocache", sender: self)
             //For vibration to work it has to be connected to a iphone 6 device!
+            //and also need to connect iphone 6 device for user locatiion to be accurate
         }
         
     }
