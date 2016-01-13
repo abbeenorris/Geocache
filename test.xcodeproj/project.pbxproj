@@ -19,6 +19,7 @@
 		D138E2B61C450A7E0096648E /* DogtagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D138E2B51C450A7E0096648E /* DogtagViewController.swift */; };
 		D138E2B81C450D0B0096648E /* PoppyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D138E2B71C450D0B0096648E /* PoppyViewController.swift */; };
 		D138E2BA1C4512310096648E /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D138E2B91C4512310096648E /* CoinViewController.swift */; };
+		D138E2BC1C4611D30096648E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D138E2BB1C4611D30096648E /* Default-568h@2x.png */; };
 		F22BDFD31C0C548E0061AA78 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22BDFD21C0C548E0061AA78 /* IntroViewController.swift */; };
 		F2CB69291C1597E9003AD345 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CB69281C1597E9003AD345 /* MapKit.framework */; };
 		F2CB692B1C15A200003AD345 /* GeocacheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CB692A1C15A200003AD345 /* GeocacheViewController.swift */; };
@@ -41,6 +42,7 @@
 		D138E2B51C450A7E0096648E /* DogtagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogtagViewController.swift; sourceTree = "<group>"; };
 		D138E2B71C450D0B0096648E /* PoppyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoppyViewController.swift; sourceTree = "<group>"; };
 		D138E2B91C4512310096648E /* CoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
+		D138E2BB1C4611D30096648E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DE9410764552A0F522F31D40 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		F22BDFD21C0C548E0061AA78 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		F2CB69281C1597E9003AD345 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -63,6 +65,7 @@
 		272B9A1D1C04B6B400915B12 = {
 			isa = PBXGroup;
 			children = (
+				D138E2BB1C4611D30096648E /* Default-568h@2x.png */,
 				272B9A281C04B6B400915B12 /* test */,
 				272B9A271C04B6B400915B12 /* Products */,
 				C89E07AE4D92BC935E650A88 /* Pods */,
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				272B9A341C04B6B400915B12 /* LaunchScreen.storyboard in Resources */,
+				D138E2BC1C4611D30096648E /* Default-568h@2x.png in Resources */,
 				272B9A311C04B6B400915B12 /* Assets.xcassets in Resources */,
 				272B9A2F1C04B6B400915B12 /* Main.storyboard in Resources */,
 			);
